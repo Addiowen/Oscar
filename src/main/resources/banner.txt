@@ -1,0 +1,10 @@
+  COMPULYNX
+  C)ccc   O)oooo   M)mm mmm  P)ppppp    A)aa    S)ssss  
+ C)   cc O)    oo M)  mm  mm P)    pp  A)  aa  S)    ss 
+C)       O)    oo M)  mm  mm P)ppppp  A)    aa  S)ss    
+C)       O)    oo M)  mm  mm P)       A)aaaaaa      S)  
+ C)   cc O)    oo M)      mm P)       A)    aa S)    ss 
+  C)ccc   O)oooo  M)      mm P)       A)    aa  S)ssss 
+  										
+  	2.0.SNAPSHOT
+                                                     

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DeduplicationReport" pageWidth="750" pageHeight="854" whenNoDataType="NoDataSection" columnWidth="555" leftMargin="0" rightMargin="30" topMargin="0" bottomMargin="20" uuid="06b36e40-d24c-425f-9361-4813b84a5614">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<field name="accountName" class="java.lang.String"/>
+	<field name="user" class="java.lang.String"/>
+	<field name="datePrinted" class="java.lang.String"/>
+	<field name="branch" class="java.lang.String"/>
+	<field name="branchCode" class="java.lang.String"/>
+	<field name="cardType" class="java.lang.String"/>
+	<background>
+		<band height="610"/>
+	</background>
+	<title>
+		<band height="21">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="1" width="700" height="20" backcolor="#CCCCCC" uuid="4e87640c-4641-4465-8b45-51d2585d4e1b"/>
+				<staticText>
+					<reportElement x="200" y="-1" width="100" height="22" uuid="eb27edf9-56b7-460b-9442-4e71ecbcac54"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[BRANCH NAME]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="0" width="100" height="20" uuid="4c9ae30b-cea2-4e15-8eab-935ee32b3662"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[BRANCH CODE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="0" width="100" height="20" uuid="9041f262-456e-486d-8124-19e458ce601f"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Id]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="500" y="0" width="100" height="20" uuid="e881d5bc-b2b9-4766-b2f4-7249be9db3ee"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[USER]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="100" y="0" width="100" height="20" uuid="1b88b277-4bd6-44e8-9f83-f08935e227db"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[ACCOUNT NAME]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="600" y="0" width="100" height="20" uuid="f6baf40d-a00a-4b9e-8cf0-457efe3111a5"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[DATE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="400" y="0" width="100" height="21" uuid="e42432fd-a2da-424e-8302-c0c62f56cb0c"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[CARD TYPE]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<detail>
+		<band height="22">
+			<textField textAdjust="StretchHeight">
+				<reportElement mode="Transparent" x="200" y="0" width="100" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="581ce721-c5de-45a8-934d-098df3cc084c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Verdana" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{branch}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="300" y="0" width="100" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="06661ee0-0574-45e2-b1f2-5fe4f8fd6132"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Verdana" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{branchCode}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="500" y="0" width="100" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="1e47a0af-d67e-4d0c-92e0-3c8420ffc0ca"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Verdana" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{user}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="0" y="0" width="100" height="22" uuid="2cf0944d-3e17-4739-88ec-c7f7c9f6d207"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Verdana" size="7"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="100" y="0" width="100" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="b797a16f-a70d-4e0a-9f48-c931ad968672"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Verdana" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accountName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="600" y="0" width="100" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="b4b1433b-1e5a-4e1c-9c85-45edf28a0bb1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Verdana" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datePrinted}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="400" y="0" width="100" height="22" forecolor="#000000" backcolor="#FFFFFF" uuid="cd9050e1-8bf7-4c08-be51-4e94d1d99c08"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Verdana" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cardType}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<noData>
+		<band height="16">
+			<staticText>
+				<reportElement x="0" y="0" width="700" height="16" uuid="9270cd6a-fba6-45ca-8beb-b4b340bc2ff3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Verdana" isBold="true" isUnderline="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[No Data Found]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

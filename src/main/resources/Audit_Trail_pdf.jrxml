@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BiometricApproval" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b5a5d9f9-c1e2-448b-b864-7266ac75761b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<field name="actionStatus" class="java.lang.String"/>
+	<field name="module" class="java.lang.String"/>
+	<field name="remoteIp" class="java.lang.String"/>
+	<field name="action" class="java.lang.String"/>
+	<field name="username" class="java.lang.String"/>
+	<field name="date" class="java.lang.String"/>
+	<field name="branchName" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="109" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="110" height="80" uuid="b88b42bb-9a71-4f64-b05e-2e681ee9cee0"/>
+				<imageExpression><![CDATA["logo_1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="180" y="60" width="200" height="20" uuid="5125b768-fc39-455f-8bff-6f98318a37aa"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Audit Rail Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="91" width="79" height="18" uuid="d1b661ef-a7af-44a2-a2fb-26e302500c7e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="459" y="91" width="107" height="18" uuid="31479a14-c274-4588-ad84-210ca407530c"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement x="380" y="6" width="79" height="16" uuid="f98b6ce5-bfc1-41aa-94c6-4f4ec9da7a47"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Page:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="459" y="6" width="107" height="16" uuid="4cb53512-e6bb-49e1-b2b8-ebb3dca8f98c"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}.toString()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="-15" y="7" width="95" height="14" uuid="3698d8c5-6801-4124-83dd-d768d449b75d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Module]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="7" width="100" height="14" uuid="c8ea8ee3-013d-4346-97ba-16315e6bba04"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Action]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="7" width="90" height="14" uuid="520328aa-ce3a-4c43-8b4b-469277b469e1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="7" width="100" height="14" uuid="89a6fca8-0aab-46d5-803e-598426bbc1d1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[User Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="7" width="89" height="14" uuid="58457ce9-2cda-45aa-b088-caccc59f39f6"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Branch Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="459" y="7" width="109" height="14" uuid="7b6a63e9-6217-489b-a9ba-85307f0cb15b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Created At]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="2" width="595" height="1" uuid="fdf55773-7c95-4716-bb23-daf9ddd871da"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="-20" y="24" width="595" height="1" uuid="b32074f2-209c-4fab-af3f-3fd623ee4197"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="-15" y="0" width="95" height="20" uuid="c8ccf8f7-04d7-4ff9-bd9e-3003f9d492eb"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{module}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="100" height="20" uuid="f9cbfbc7-843a-49ef-8f85-a79bb3e1b607"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{action}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="90" height="20" uuid="fbe834d8-1422-43ad-9676-eaefcd8b1272"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{actionStatus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="0" width="100" height="20" uuid="d176554b-9daa-4cfc-ac67-8cb6030ae5cb"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="89" height="20" uuid="4abe6e98-1f71-40fb-bab8-b320f51f5da1"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{branchName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="459" y="0" width="110" height="20" uuid="b28b735f-9d0f-4b00-bab5-3ba14311ca70"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

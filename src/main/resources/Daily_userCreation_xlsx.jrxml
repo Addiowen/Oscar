@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DailyUserCreation" pageWidth="1300" pageHeight="842" columnWidth="1000" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e4124fb5-3fa2-4a94-8e80-dc79152d31f0">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<field name="userName" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="group" class="java.lang.String"/>
+	<field name="branch" class="java.lang.String"/>
+	<field name="status" class="java.lang.String"/>
+	<field name="createdAt" class="java.lang.String"/>
+	<field name="bioStatus" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="phoneNo" class="java.lang.String"/>
+	<field name="createdBy" class="java.lang.String"/>
+	<field name="approvedBy" class="java.lang.String"/>
+	<field name="approvedAt" class="java.lang.String"/>
+	<field name="updatedAt" class="java.lang.String"/>
+	<field name="updatedBy" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="0" width="1280" height="24" backcolor="#CCCCCC" uuid="6f3725a1-6cf5-499e-a367-7281e1aa815e"/>
+				<staticText>
+					<reportElement x="100" y="0" width="100" height="24" uuid="b0ba2cc4-9843-48c8-8dcc-8255d51247f5"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[User Name]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="400" y="0" width="100" height="24" uuid="03b55cc3-84d3-4459-9c3b-239bc88f2676"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Group]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="500" y="0" width="95" height="24" uuid="399264d1-9b65-4a41-991b-29c9bd76b5a7"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Branch]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="0" width="20" height="24" uuid="31ec87d1-9e5c-4064-9357-2ffed6e61c51"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Id]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="595" y="0" width="100" height="24" uuid="4d62eb43-45eb-4e59-b400-9aaab98646f4"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Status]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="0" width="100" height="24" uuid="d515bfe2-ce08-4ebb-beda-24530abc2ec5"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Email]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="900" y="0" width="100" height="24" uuid="9e6df910-1003-448b-8f5c-7046e62a9285"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Created By]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1000" y="0" width="100" height="24" uuid="d42ab6d1-8430-4d89-a5ad-853fc3798c81"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Approved By]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1100" y="0" width="100" height="24" uuid="6e48f400-f02e-441a-a98d-a4321edfffe6"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Created At]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1200" y="0" width="80" height="24" uuid="852f52ae-4736-42e2-aa6f-25ad781f6551"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Approved At]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="0" width="80" height="24" uuid="d26494f4-81bb-4214-939c-55d2a3dfdd54"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Name]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="200" y="0" width="100" height="24" uuid="701a5363-9c7f-4535-8b9a-01ca931355e7"/>
+					<textElement verticalAlignment="Middle" markup="none">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Phone]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="695" y="0" width="105" height="24" uuid="1efa59d0-bb4c-4987-9645-ba6a6188c6b7"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Updated At]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="800" y="0" width="100" height="24" uuid="709b58c6-1ebd-4c91-8c96-c18b77d46a76"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Verdana" size="8" isBold="true"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Updated By]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="480" y="0" width="95" height="25" uuid="23e6a966-5528-4956-88d7-7d23f2f188d3"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{branch}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="575" y="0" width="100" height="25" uuid="f035cc6c-99af-411e-9ee8-d58f2fd88b96"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="100" height="25" uuid="eb417a2f-c0a7-444d-9a49-5e23903b9ff4"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{group}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="100" height="25" uuid="e59c2605-0e42-4c8f-bc17-f6acd6a7c41e"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="100" height="25" uuid="ad28fc64-37e0-4af8-8e92-ef865e8ab93b"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1180" y="0" width="80" height="25" uuid="3daa9628-ce21-4eaa-8517-bb4e9f5f473b"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{approvedAt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1080" y="0" width="100" height="25" uuid="02a8c41b-3b28-4d45-82c4-52a6aaf43a93"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{createdAt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-20" y="0" width="20" height="25" uuid="6858a6d8-1e19-43a4-abdd-3f01db19047c"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="880" y="0" width="100" height="25" uuid="75c5c86e-a23e-4f12-8283-05d19debc376"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{createdBy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="980" y="0" width="100" height="25" uuid="3d26f688-62c7-47b1-82b9-217a96446738"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{approvedBy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="100" height="25" uuid="9133e3a7-d75c-4dc7-8cf8-39ae96efdaaa"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{phoneNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="80" height="25" uuid="7c4fb81c-f6ef-4544-b459-8bf212a8e0d7"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="675" y="0" width="105" height="25" uuid="7cc3ae48-46cd-434f-8d08-e41b0fcec326"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{updatedAt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="780" y="0" width="100" height="25" uuid="af4791ca-9030-479e-9a86-07594e1299ae"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{updatedBy}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<noData>
+		<band height="16"/>
+	</noData>
+</jasperReport>
